@@ -9,7 +9,7 @@ TG_CHAT_ID="YOUR_TELEGRAM_CHAT_ID"
 
 # Check if the laptop is NOT connected to the internet 
 # -c 1: send 1 packet, -W 1: wait max 1 second 
-if ! ping -c 1 -W 1 1.1.1.1 > /dev/null 2>&1; then 
+if ! ping -c 1 -W 1 api.telegram.org > /dev/null 2>&1; then 
 	exit 0 # Exit silently; no internet connection 
 fi
 
